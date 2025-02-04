@@ -1,0 +1,169 @@
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+
+/*Styles by ELEMENTS*/
+body {
+  margin: 0;
+  background-color: #121212;
+  color: white;
+}
+h1 {
+  text-align: center;
+}
+p {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 26px;
+}
+a {
+  color: rgb(201, 201, 201);
+  font-size: large;
+  font-weight: bold;
+}
+a:hover {
+  color: rgb(110, 110, 110);
+  font-size: large;
+  font-weight: bold;
+}
+button {
+  background-color: #121212;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  width: 150px;
+  height: 50px;
+  margin-bottom: 15px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer; /* Ajout du curseur pointeur sur les boutons */
+}
+button:hover {
+  cursor: pointer;
+  background-color: #333333; /* Rend le fond plus clair au survol */
+}
+header-zone {
+  display: flex;
+  gap: 15px;
+  position: fixed; /* Fixe le header en haut de la page */
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 255, 255, 0.8);
+  z-index: 3; /* Met le header au-dessus de tous les autres éléments */
+}
+title-text {
+  position: absolute;
+  width: 100%;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 3;
+}
+header-zone div {
+  text-shadow: 0 0 6px #000000;
+  font-size: 19px;
+  cursor: pointer;
+  text-align: center;
+  z-index: 10;
+}
+
+header-zone div:nth-child(1) {
+  width: auto;
+}
+header-zone div:nth-child(2) {
+  width: auto;
+}
+header-zone div:nth-child(3) {
+  width: auto;
+}
+header-zone .selectedElement {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+header-zone .selectedElement::before {
+  content: "--- "; /* Ajoute trois traits d'union */
+  left: -30px; /* Ajuste l'espace à gauche */
+}
+header-zone .selectedElement::after {
+  content: " ---"; /* Ajoute trois traits d'union */
+  right: -30px; /* Ajuste l'espace à droite */
+}
+footer {
+  /* On utilise une forme elliptique pour étirer le cercle horizontalement */
+  background: radial-gradient(ellipse at top center, rgb(59, 59, 59) 0%, rgb(0, 0, 0) 100%);
+  padding: 50px; /* Remarque : "50px 50" n'est pas valide, ici on utilise 50px sur tous les côtés */
+}
+
+/*Styles by ID*/
+#MainImage {
+  width: 100vw;
+  height: 85vh;
+  object-fit: cover;
+  filter: brightness(70%);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#LogoImage {
+  height: 83vh;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 2;
+  filter: brightness(75%);
+  opacity: 0.5;
+}
+#JerseyImage {
+  width: 90%; 
+  height: 230px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+#RosterImage {
+  width: 90%; 
+  height: 230px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+#FooterTitle{
+  text-decoration: dotted;
+}
+#FooterLogo {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+/*Styles by CLASS*/
+.columns-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+.column {
+  width: 30%;
+  background-color: rgba(158, 158, 158, 0.651);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/*Styles by THINGS*/
+::-webkit-scrollbar {
+  display: none;
+}
+::selection {
+  background-color: rgba(51, 51, 51, 0.6);
+}
+
+
+
+

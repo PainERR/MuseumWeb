@@ -1,0 +1,241 @@
+:root {
+  --form-color: #000000;
+  --form-Valorant: #ee0073;
+  --form-Fortnite: #f77514;
+  --form-RocketLeague: #8936ff;
+  --form-LeagueOfLegends: #39b8ff;
+  --form-TeamFightTactics: #55e6a6;
+  --form-AgeOfEmpires: #ffc73b;
+  --form-CallOfDuty: #ec8fff;
+
+  --Width-Card-Basic: 42.5%;
+  --Width-Card-MiniLaptop: 42.5%;
+
+  --Title-Color: #2b2b2b;
+
+
+  --logo-height: 82px;
+  --logo-height-1320: 82px;
+  --logo-height-1365: 82px;
+  --logo-height-1398: 100px;
+  --logo-height-500: 77px;
+
+  --logo-width: 288px;
+  --logo-width-1320: 288px;
+  --logo-width-1365: 288px;
+  --logo-width-1398: 350px;
+  --logo-width-500: 250px;
+
+  --logo-position-top: 20px;
+  --logo-position-top-500: 10px;
+
+  --logo-position-right: 5px;
+  --logo-position-right-500: auto;
+
+  --button-margin-top: 20px;
+  --button-margin-top-500: 23px;
+}
+
+body {
+  background-color: #8FAECF;
+}
+h1 {
+  width: 350px;
+  text-align: center;
+}
+button {
+  text-align: center;
+}
+
+/* Personnalisation de la barre de défilement */
+.dropdown-content::-webkit-scrollbar {
+  width: 10px; /* Largeur de la barre de défilement */
+}
+.dropdown-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2); /* Couleur de l'arrière-plan de la barre de défilement */
+  border-radius: 10px; /* Coins arrondis de la piste de défilement */
+}
+.dropdown-content::-webkit-scrollbar-thumb {
+  background-color: #8d8d8d; /* Couleur du pouce (la partie glissante) */
+  border-radius: 10px; /* Coins arrondis du pouce */
+  border: 2px solid rgba(199, 199, 199, 0.3); /* Bordure autour du pouce */
+}
+.dropdown-content::-webkit-scrollbar-thumb:hover {
+  background-color: #727272; /* Couleur du pouce au survol */
+}
+.dropdown-content::-webkit-scrollbar-thumb:active {
+  background-color: #585858; /* Couleur du pouce lorsque la barre est cliquée */
+}
+::-webkit-scrollbar{
+  display: none;
+}
+#Cross:hover {
+  cursor: pointer;
+}
+#ButtonNext {
+  height: 14%;
+  width: 8%;
+  position: absolute;
+  top: 170%;
+  right: 3%;
+}
+#ButtonMenu {
+  height: 10%;
+  width: 9%;
+  position: absolute;
+  top: 395px;
+  right: 82%;
+}
+.BackgroundVideo {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.main-container {
+  position: absolute;       /* Nécessaire pour utiliser top et left */
+  top: 63%;                 /* Place verticalement au centre de l'écran */
+  left: 50%;                /* Place horizontalement au centre de l'écran */
+  transform: translate(-50%, -50%); /* Recentre le conteneur par son centre */
+  z-index: 1;               /* Assure qu'il est au-dessus de la vidéo */
+  width: 65.55%;             /* Facultatif : largeur de votre conteneur */
+  height: 63%;            /* Facultatif : hauteur de votre conteneur */
+  background-color: rgba(255, 255, 255, 0.0); /* Juste pour visualisation */
+  display: flex;            /* Flexbox si vous voulez centrer le contenu interne */
+  justify-content: center;  /* Centre horizontalement le contenu interne */
+  align-items: center;      /* Centre verticalement le contenu interne */
+}
+.container {
+  position: absolute;
+  width: 205px; /* Taille de base de la div */
+  height: 205px;
+}
+.container:hover {
+  transform: scale(1.03);
+  filter: brightness(0.9); /* Rend tout le SVG plus sombre */
+}
+.container a {
+  display: block;
+  position: relative;
+}
+
+/* Style du menu déroulant */
+.dropdown-content {
+  position: absolute;
+  background-color: #3b3b3b;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  padding: 0px 0px;
+  z-index: 1;
+  font-size: 20px;
+  overflow: auto; 
+}
+
+.dropdown-content::-webkit-scrollbar {
+  display: block;
+}
+/* Style des liens dans le menu déroulant */
+.dropdown-content a {
+  color: black;
+  padding: 6px 0;
+  text-decoration: none;
+  display: block;
+  text-align: center; /* Centrer le texte */
+}
+
+.alternative-page {
+  display: none;
+}
+.background {
+  width: 100%;
+  height: 100%;
+}
+.hidden {
+  display: none !important;
+}
+
+#GameTitle {
+    font-size: 250%;
+    position: absolute;
+    top: 40px;                 /* Place verticalement au centre de l'écran */
+    left: 50%;                /* Place horizontalement au centre de l'écran */
+    transform: translate(-50%, -50%); /* Recentre le conteneur par son centre */
+}
+
+
+  /* Définir l'animation */
+  @keyframes slideUp {
+    0% {
+      transform: translateY(100vh); /* Position initiale : en dehors de l'écran en bas */
+    }
+    100% {
+      transform: translateY(0); /* Position finale : à sa place */
+    }
+  }
+
+
+    /* Classe pour l'effet de fading */
+    .visible {
+      opacity: 1 !important;
+      transition: opacity 1s ease-in-out; /* Durée et type de transition */
+    }
+
+  .roster-game {
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0;
+    padding: 6.25rem 0;
+    visibility: hidden
+}
+
+.roster-game__background,.roster-game__background .overlay {
+    bottom: 0;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.roster-game__background img {
+    height: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 50%
+}
+
+.roster-game__wrapper {
+    align-items: start
+}
+
+.game>svg .overlay {
+    opacity: 1;
+    transition: opacity .2s ease-out
+}
+
+/* Masquage initial */
+.game {
+    position: absolute;
+    width: 50%; /* Largeur personnalisée */
+    height: 50%;
+    top: 50%; /* Position initiale */
+    right: 1%; /* L'élément commence hors de l'écran à droite */
+    transform: translateY(100vh); /* Position hors de l'écran */
+    transition: transform 1s ease-out; /* Glissement fluide uniquement */
+    display: none; /* L'élément est complètement caché */
+  }
+  
+  /* Classe pour afficher et glisser l'élément */
+  .game.show {
+    display: block; /* L'élément devient visible */
+    transform: translateY(0); /* Glisse jusqu'à sa position normale */
+  }
+
+
+  

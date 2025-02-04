@@ -1,0 +1,15 @@
+<li class="game" style="top: 50%; width: 50%; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);" > 
+        <svg viewBox="0 0 677 803" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="element-rocket-league" opacity="1" mask="url(#mask-rocket-league)"> 
+            <rect id="overlay-rocket-league" width="100%" height="100%" fill="white" opacity="0" class="overlay">
+            </rect>
+          </g> 
+          <defs>
+            <mask id="mask-rocket-league">
+              <path 
+                d="M0.26141 727.891C0.265134 738.275 8.21497 746.929 18.5613 747.812L654.503 802.067C666.177 803.063 676.203 793.855 676.203 782.139V75.9388C676.203 65.5623 668.268 56.9092 657.93 56.0134L21.7344 0.883179C10.0483 -0.129517 0.00361726 9.08582 0.00782407 20.8157L0.26141 727.891Z" fill="white">
+              </path>
+            </mask>
+          </defs>
+        </svg>
+      </li>
